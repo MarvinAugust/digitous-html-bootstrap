@@ -21,9 +21,16 @@
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Team</a>
-                  </li>
+                  <div class="dropdown">
+                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
+                      Team
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <li><button class="dropdown-item" type="button">Vincent</button></li>
+                      <li><button class="dropdown-item" type="button">Béatrice</button></li>
+                      <li><button class="dropdown-item" type="button">Rosita</button></li>
+                    </ul>
+                  </div>
                  
                   <li class="nav-item">
                     <a class="nav-link disabled">Contact</a>
@@ -33,16 +40,30 @@
             </div>
           </nav>
 
+          <div class="alert alert-danger d-flex align-items-center" role="alert" style="margin-left: 60px; margin-right: 60px;">
+            <div>
+              Une erreur serveur est survenue. Veuillez rafraîchir la page ou réessayer plus tard
+            </div>
+          </div>
+
+
         <header>
             <div class="container">
                 <div class="row bg-secondary" style="padding-top: 70px; padding-bottom: 70px;">
                   <div class="col-8 fs-1">Hi! My name is!</div>
-                  <div class="col-4 fs-1" style="text-align: center;"><img src="../img/eminem.jpg" class="img-fluid rounded-circle mx-auto"  alt="eminem" style="height: 100px; display: block; width: 100px;">Slim Shady</div>
+                  <div class="col-4 fs-2" style="text-align: center;"><img src="../img/eminem.jpg" class="img-fluid rounded-circle mx-auto"  alt="eminem" style="height: 150px; display: block; width: 150px;">Slim Shady</div>
                 </div>
          </header>
 
+
+         <div class="d-grid gap-2 d-md-flex justify-content-center" style="margin-top: 40px;">
+         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Signup newsletter
+        </button>
+      </div>
+
             <div class="container">
-              <div class="row align-items-start" style="padding-top: 40px; padding-bottom: 40px;">
+              <div class="row align-items-start" style="padding-bottom: 40px;">
                 <div class="col">
                   <h2>Planification</h2>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo adipisci rerum quae officia autem voluptatem ipsam placeat vero ad consectetur fugiat atque est esse nobis voluptate, quaerat sunt illo perspiciatis odio molestiae ea inventore velit? Autem quis deleniti reiciendis asperiores?
@@ -58,10 +79,26 @@
               </div>
           
 
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Newsletter</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Email</label>
+                      <input type="email" id="exampleFormControlInput1" placeholder="ex : lala@land.com">
+                    </div>
+                    <div class="modal-footer gap-2 d-block">
+                      <button type="button" class="btn btn-primary">S'abonner</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
 
-
-         </section>
 
 
 
